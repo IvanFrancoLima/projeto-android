@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'android';
+    src: url(../fontes/IDroid.otf) format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ab;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --cor6: #C5EBD6;
+    --fontprincipal: android,arial,sans-serif;
+    --fonteheader:'Bebas Neue', cursive;
+}
+
+*{
+    padding: 0px;
+    margin:  0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(to bottom,#3ddc84,#2fa866,#1a5c37);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.39);
+    font-family: var(--fonteheader);
+}
+
+header>h1{
+    padding: 20px 40px 30px 40px;
+}
+
+header>p{
+    padding-bottom: 10px;
+}
+
+nav{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+}
+
+nav>a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav>a:hover{
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 2px 2px 0px 0px;
+}
+
+main{
+    background-color: white;
+    min-width: 350px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main>article{
+    padding: 20px;
+
+}
+
+main>article>h1,h2{
+    font-family: var(--fontprincipal);
+    margin: 10px 0px;
+}
+
+main>article>h2{
+    background-image: linear-gradient(to right,#83e1ab,transparent);
+}
+
+main>article>p{
+    line-height: 2.0em;
+    text-indent: 15px;
+}
+
+main img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+main img#bugdroid{
+    width: 50%;
+}
+
+main strong{
+    color: var(--cor2);
+}
+
+main a{
+    color: #1a5c37;
+    text-decoration: none;
+}
+
+main a::after{
+    content: '\1F517';
+}
+
+div#video{
+    position: relative;
+    background-color: #063d1e;
+    margin: 0px -20px 20px -20px ;
+    padding: 20px;
+    padding-bottom: 56.5%;
+}
+
+div#video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main>article>aside{
+    background-color: var(--cor6);
+    margin:10px 0px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+main>article>aside>h3{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+main>article>aside>p{
+    text-indent: 15px;
+    padding: 10px;
+}
+
+aside>ul{
+    list-style-position: inside;
+    list-style-type: '\00A0\00A0\2714';
+    padding: 10px;
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
